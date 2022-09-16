@@ -13,22 +13,22 @@ const preco3 = 6.00;
 const disponivelEmEstoque3 = true;
 
 //3)
-const precoMedio = (preco1 + preco2 + preco3)/3;
+const precoMedio = (preco1 + preco2 + preco3) / 3;
 console.log(`O preço médio é: ${precoMedio.toFixed(2)}`);
 
 //4)
 const temNoEstoque = disponivelEmEstoque1 && disponivelEmEstoque2 && disponivelEmEstoque3;
 console.log(`A verificação é: ${temNoEstoque}`);
 
-//semana 2
-//1)
+
+//5)
 const arrayreceitas1 = ["sorvete", " bolo", " panqueca", " pudim"]
 
 const arrayreceitas2 = ["mojito", " caipirinha", " batida", " margarita"]
 
 const arrayreceitas3 = ["sopa", " sorvete", " smoothie", " picolé"]
 
-//2)
+//6)
 console.log(`
     ${nome1.toUpperCase()}
     Preço em São Paulo: ${preco1} reais o kg
@@ -39,7 +39,7 @@ console.log(`
 console.log(`
     ${nome2.toUpperCase()}
     Preço em São Paulo: ${preco2} reais o kg
-    Está disponível em estoque? ${disponivelEmEstoque2}
+    É a mais consumida no Brasil? ${disponivelEmEstoque2}
     Possíveis receitas: ${arrayreceitas2}
 `)
 
@@ -49,3 +49,90 @@ console.log(`
     É a mais consumida no Brasil? ${disponivelEmEstoque3}
     Possíveis receitas: ${arrayreceitas3}
 `)
+
+//semana 2
+//1)
+objeto1 = {
+    nome: "banana",
+    preco: 3.70,
+    disponivelEmEstoque: true,
+    receitas: arrayreceitas1
+}
+
+objeto2 = {
+    nome: "melancia",
+    preco: 4.00,
+    disponivelEmEstoque: false,
+    receitas: arrayreceitas2
+}
+
+objeto3 = {
+    nome: "melão",
+    preco: 6.00,
+    disponivelEmEstoque: true,
+    receitas: arrayreceitas3
+}
+
+//2)
+const arrayDeObjetos = []
+
+//3)
+// arrayDeObjetos.push(objeto1, objeto2, objeto3)
+// console.log(arrayDeObjetos)
+
+//4 e 5)
+if (objeto1.disponivelEmEstoque === true) {
+    arrayDeObjetos.push(objeto1)
+} else {
+    alert("Item 1 não adicionado")
+}
+
+if (objeto2.disponivelEmEstoque === true) {
+    arrayDeObjetos.push(objeto2)
+} else {
+    alert("Item 2 não adicionado")
+}
+
+if (objeto3.disponivelEmEstoque === true) {
+    arrayDeObjetos.push(objeto3)
+} else {
+    alert("Item 3 não adicionado")
+}
+
+console.log(arrayDeObjetos)
+
+//semana 3
+//1 e 2)
+const refatoracao = arrayDeObjetos.map((objeto) => {
+    console.log(`${objeto.nome.toUpperCase()}
+preço: ${objeto.preco}
+tem no estoque: ${objeto.disponivelEmEstoque}
+receitas: ${objeto.receitas}
+`)
+})
+
+//3)
+const devolverStringDeObjeto = (objeto) => {
+    console.log(`${objeto.nome.toUpperCase()}
+preço: ${objeto.preco}
+tem no estoque: ${objeto.disponivelEmEstoque}
+receitas: ${objeto.receitas}
+    `)
+}
+
+devolverStringDeObjeto(arrayDeObjetos[1])
+
+//4)
+const receberArrayDeObjetos = (arrayDeObjetos, stringAleatoria) => {
+    const resultado = arrayDeObjetos.filter((objeto) => {
+        return objeto.nome === stringAleatoria
+    })
+
+    if(resultado.length > 0){
+        console.log(resultado)
+    } else {
+        alert("nenhum item encontrado")
+    }
+}
+
+receberArrayDeObjetos(arrayDeObjetos, "banana" )
