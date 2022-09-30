@@ -6,7 +6,7 @@ const disponivelEmEstoque1 = true;
 
 const nome2 = "melancia";
 const preco2 = 4.00;
-const disponivelEmEstoque2 = false;
+const disponivelEmEstoque2 = true;
 
 const nome3 = "melão";
 const preco3 = 6.00;
@@ -56,21 +56,24 @@ objeto1 = {
     nome: "banana",
     preco: 3.70,
     disponivelEmEstoque: true,
-    receitas: arrayreceitas1
+    receitas: arrayreceitas1,
+    imagem: "/media/banana.jpg"
 }
 
 objeto2 = {
     nome: "melancia",
     preco: 4.00,
-    disponivelEmEstoque: false,
-    receitas: arrayreceitas2
+    disponivelEmEstoque: true,
+    receitas: arrayreceitas2,
+    imagem: "/media/melancia.jpg"
 }
 
 objeto3 = {
     nome: "melão",
     preco: 6.00,
     disponivelEmEstoque: true,
-    receitas: arrayreceitas3
+    receitas: arrayreceitas3,
+    imagem: "/media/melao.jpg"
 }
 
 //2)
@@ -120,7 +123,9 @@ receitas: ${objeto.receitas}
     `)
 }
 
+devolverStringDeObjeto(arrayDeObjetos[0])
 devolverStringDeObjeto(arrayDeObjetos[1])
+devolverStringDeObjeto(arrayDeObjetos[2])
 
 //4)
 const receberArrayDeObjetos = (arrayDeObjetos, stringAleatoria) => {
@@ -135,4 +140,13 @@ const receberArrayDeObjetos = (arrayDeObjetos, stringAleatoria) => {
     }
 }
 
-receberArrayDeObjetos(arrayDeObjetos, "banana" )
+receberArrayDeObjetos(arrayDeObjetos, "banana")
+
+//semana4
+//1)done
+//2)done
+//3)done
+//4)done
+//5)done
+//6)done
+
