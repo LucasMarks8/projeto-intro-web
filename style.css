@@ -5,15 +5,13 @@
 
 header {
     display: block;
-    border: 2px solid black;
     height: 5rem;
     position: static;
     background-color: black;
-    font: helvetica;
+    font: arial;
 }
 
 .input-container {
-    border: 1px solid black;
     margin-top: 1rem;
     text-align: center;
 }
@@ -23,10 +21,12 @@ h1 {
     margin-left: 1rem;
     color: white;
     background-color: black;
+    
 }
 
-div {
-    border: 1px solid black;
+h2 {
+    font: arial;
+    color: white;
 }
 
 img {
@@ -34,30 +34,86 @@ img {
 }
 
 section {
-    border: 1px solid black;
+    display: flex;
     width: 25rem;
+    height: 8rem;
     margin: 1rem auto;
+    align-items: center;
+    justify-content: space-around;
+    background-color: orange;
+    border-radius: 1rem;
 }
 
 .imagem-footer {
-    width: 50px;
-    border: 1px solid black;
-    text-align: center;
+    width: 50px;   
 }
 
 .nome-lucas {
-    border: 1px solid black;
-    display: inline;
-    text-align: center;
+    color: white;
+    }
+
+.imagem-whats {
+    width: 50px;
+}
+
+.imagem-facebook {
+    width: 50px;
+}
+
+.imagem-insta {
+    width: 50px;
 }
 
 footer {
-    border: 1px solid black;
-    position: absolute;
-    bottom: 0;
+    background-color: black;
+    height: 80px;
     text-align: center;
-    left: 35%;
-    right: 35%;
+}
+
+.container {
+    display: grid;
+    background-color: rgb(181, 238, 181);
+    min-height: 100vh;
+    min-width: 100vw;
+    align-items: center;
+}
+
+.itens-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+.div-descricao {
+    width: 200px;
+    text-align: center;
+}
+
+.div-imagem {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    section {
+        justify-content: space-around;
+        width: 18rem;
+        height: 10rem;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .input-container {
+        align-items: center;
+    }
+
+    footer {
+        height: 80px;
+    }
 
 }
+
+
 
