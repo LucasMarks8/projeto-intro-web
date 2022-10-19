@@ -94,6 +94,11 @@ footer {
     align-items: center;
 }
 
+.descricao {
+    font-weight: bold;
+    list-style-type: none;
+}
+
 @media screen and (min-width : 320px) and (max-width : 480px) {
     section {
         justify-content: space-around;

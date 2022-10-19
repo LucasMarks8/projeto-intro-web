@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varejão do Lucas</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -17,121 +17,120 @@
         </header>
         <main>
             <div class="input-container">
-                <input type="search" name="search" id="search" placeholder="Pesquise aqui">
-                <button type="submit">Buscar</button>
+                <input onclick="devolveItem()" type="search" name="search" id="search" placeholder="Pesquise aqui">
+                <button onclick="buscar()" type="submit">Buscar</button>
             </div>
             <div class="itens-container">
-                <section>
+                <section id="removerFruta1">
                     <div class="div-imagem">
                         <a href="https://www.mundoboaforma.com.br/beneficios-da-banana/" target="_blank">
                             <img src="./media/banana.jpg" alt="imagem de banana"></a>
                     </div>
                     <div class="div-descricao">
-                        <h2>Banana</h2>
-                        <ul>
-                            <p><b>Preço:</b> R$3,70</p>
+                        <!-- <h2>Banana</h2> -->
+                        <ul class="descricao">
+                            <!-- <p><b>Preço:</b> R$3,70</p>
                             <p><b>Tem no estoque:</b> Sim</p>
-                            <p><b>Receitas:</b> Sorvete, Bolo, Panqueca, Pudim</p>
+                            <p><b>Receitas:</b> Sorvete, Bolo, Panqueca, Pudim</p> -->
                         </ul>
                     </div>
                 </section>
-                <section>
-                    <div>
+                <section id="removerFruta2">
+                    <div class="div-imagem">
                         <a href="https://www.mundoboaforma.com.br/beneficios-da-melancia" target="_blank">
                             <img src="./media/melancia.jpg" alt="imagem de melancia"></a>
                     </div>
                     <div class="div-descricao">
-                        <h2>Melancia</h2>
-                        <ul>
-                            <p><b>Preço:</b> R$4,00</p>
+                        <!-- <h2>Melancia</h2> -->
+                        <ul class="descricao">
+                            <!-- <p><b>Preço:</b> R$4,00</p>
                             <p><b>Tem no estoque:</b> Sim</p>
-                            <p><b>Receitas:</b> Mojito, Caipirinha, Batida, Margarita</p>
+                            <p><b>Receitas:</b> Mojito, Caipirinha, Batida, Margarita</p> -->
                         </ul>
                     </div>
                 </section>
-                <section>
-                    <div>
+                <section id="removerFruta3">
+                    <div class="div-imagem">
                         <a href="https://www.mundoboaforma.com.br/beneficios-do-melao" target="_blank">
                             <img src="./media/melao.jpg" alt="imagem de melao"></a>
                     </div>
                     <div class="div-descricao">
-                        <h2>Melão</h2>
-                        <ul>
-                            <p><b>Preço:</b> R$6,00</p>
+                        <!-- <h2>Melão</h2> -->
+                        <ul class="descricao">
+                            <!-- <p><b>Preço:</b> R$6,00</p>
                             <p><b>Tem no estoque:</b> Sim</p>
-                            <p><b>Receitas:</b> Sopa, Sorvete, Smoothie, Picolé</p>
+                            <p><b>Receitas:</b> Sopa, Sorvete, Smoothie, Picolé</p> -->
                         </ul>
                     </div>
                 </section>
-                <section>
-                    <div>
+                <section id="removerFruta4">
+                    <div class="div-imagem">
                         <a href="https://www.mundoboaforma.com.br/beneficios-do-limao" target="_blank">
                             <img src="./media/limao.jpg" alt="imagem de limao"></a>
                     </div>
                     <div class="div-descricao">
-                        <h2>Limão</h2>
-                        <ul>
-                            <p><b>Preço:</b> R$2,00</p>
+                        <!-- <h2>Limão</h2> -->
+                        <ul class="descricao">
+                            <!-- <p><b>Preço:</b> R$2,00</p>
                             <p><b>Tem no estoque:</b> Sim</p>
-                            <p><b>Receitas:</b> Mousse, Bolo, Caipirinha, Limonada suiça</p>
+                            <p><b>Receitas:</b> Mousse, Bolo, Caipirinha, Limonada suiça</p> -->
                         </ul>
                     </div>
                 </section>
-                <section>
-                    <div>
+                <section id="removerFruta5">
+                    <div class="div-imagem">
                         <a href="https://www.mundoboaforma.com.br/beneficios-da-laranja" target="_blank">
                             <img src="./media/laranja.jpeg" alt="imagem de laranja"></a>
                     </div>
                     <div class="div-descricao">
-                        <h2>Laranja</h2>
-                        <ul>
-                            <p><b>Preço:</b> R$2,50</p>
+                        <!-- <h2>Laranja</h2> -->
+                        <ul class="descricao">
+                            <!-- <p><b>Preço:</b> R$2,50</p>
                             <p><b>Tem no estoque:</b> Sim</p>
-                            <p><b>Receitas:</b> Bolo, Suco, Pudim, Doce com calda</p>
+                            <p><b>Receitas:</b> Bolo, Suco, Pudim, Doce com calda</p> -->
                         </ul>
                     </div>
                 </section>
-                <section>
-                    <div>
+                <section id="removerFruta6">
+                    <div class="div-imagem">
                         <a href="https://www.mundoboaforma.com.br/14-beneficios-da-lichia-para-que-serve-e-propriedades/"
                             target="_blank">
                             <img src="./media/lichia.jpg" alt="imagem de lichia"></a>
                     </div>
                     <div class="div-descricao">
-                        <h2>Lichia</h2>
-                        <ul>
-                            <p><b>Preço:</b> R$5,00</p>
+                        <!-- <h2>Lichia</h2> -->
+                        <ul class="descricao">
+                            <!-- <p><b>Preço:</b> R$5,00</p>
                             <p><b>Tem no estoque:</b> Sim</p>
-                            <p><b>Receitas:</b> Cupcake, Sorvete, Capirinha, Ceviche</p>
+                            <p><b>Receitas:</b> Cupcake, Sorvete, Capirinha, Ceviche</p> -->
                         </ul>
                     </div>
                 </section>
-                <section>
-                    <div>
+                <section id="removerFruta7">
+                    <div class="div-imagem">
                         <a href="https://www.mundoboaforma.com.br/beneficios-do-morango/" target="_blank">
                             <img src="./media/morango.jpg" alt="imagem de morango"></a>
                     </div>
                     <div class="div-descricao">
-
-                        <h2>Morango</h2>
-                        <ul>
-                            <p><b>Preço:</b> R$7,00</p>
+                        <!-- <h2>Morango</h2> -->
+                        <ul class="descricao">
+                            <!-- <p><b>Preço:</b> R$7,00</p>
                             <p><b>Tem no estoque:</b> Sim</p>
-                            <p><b>Receitas:</b> Torta, Bolo, Fondue, Geléia</p>
+                            <p><b>Receitas:</b> Torta, Bolo, Fondue, Geléia</p> -->
                         </ul>
                     </div>
                 </section>
-                <section>
-                    <div>
+                <section id="removerFruta8">
+                    <div class="div-imagem">
                         <a href="https://www.mundoboaforma.com.br/beneficios-da-uva/" target="_blank">
                             <img src="./media/uva.png" alt="imagem de uva"></a>
                     </div>
                     <div class="div-descricao">
-                        <h2>Uva</h2>
-                        <ul>
-                            <p><b>Preço:</b> R$4,50</p>
+                        <!-- <h2>Uva</h2> -->
+                        <ul class="descricao">
+                            <!-- <p><b>Preço:</b> R$4,50</p>
                             <p><b>Tem no estoque:</b> Sim</p>
-                            <p><b>Receitas:</b> Geléia, Pavê, Beijinho, Bombom</p>
+                            <p><b>Receitas:</b> Geléia, Pavê, Beijinho, Bombom</p> -->
                         </ul>
                     </div>
                 </section>
