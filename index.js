@@ -216,49 +216,49 @@ const novoArrayObjetos = [];
 if (objeto1.disponivelEmEstoque === true) {
   novoArrayObjetos.push(objeto1);
 } else {
-  alert("Item 1 não adicionado");
+  console.log("Item 1 não adicionado");
 }
 
 if (objeto2.disponivelEmEstoque === true) {
   novoArrayObjetos.push(objeto2);
 } else {
-  alert("Item 2 não adicionado");
+  console.log("Item 2 não adicionado");
 }
 
 if (objeto3.disponivelEmEstoque === true) {
   novoArrayObjetos.push(objeto3);
 } else {
-  alert("Item 3 não adicionado");
+  console.log("Item 3 não adicionado");
 }
 
 if (objeto4.disponivelEmEstoque === true) {
   novoArrayObjetos.push(objeto4);
 } else {
-  alert("Item 4 não adicionado");
+  console.log("Item 4 não adicionado");
 }
 
 if (objeto5.disponivelEmEstoque === true) {
   novoArrayObjetos.push(objeto5);
 } else {
-  alert("Item 5 não adicionado");
+  console.log("Item 5 não adicionado");
 }
 
 if (objeto6.disponivelEmEstoque === true) {
   novoArrayObjetos.push(objeto6);
 } else {
-  alert("Item 6 não adicionado");
+  console.log("Item 6 não adicionado");
 }
 
 if (objeto7.disponivelEmEstoque === true) {
   novoArrayObjetos.push(objeto7);
 } else {
-  alert("Item 7 não adicionado");
+  console.log("Item 7 não adicionado");
 }
 
 if (objeto8.disponivelEmEstoque === true) {
   novoArrayObjetos.push(objeto8);
 } else {
-  alert("Item 8 não adicionado");
+  console.log("Item 8 não adicionado");
 }
 
 console.log(novoArrayObjetos);
@@ -290,7 +290,7 @@ const receberArrayDeObjetos = (arrayDeObjetos, stringAleatoria) => {
   if (resultado.length > 0) {
     console.log(resultado);
   } else {
-    alert("nenhum item encontrado");
+    console.log();("nenhum item encontrado");
   }
 };
 
