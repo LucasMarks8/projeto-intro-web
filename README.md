@@ -1,6 +1,20 @@
 # Projeto de Introdução ao desenvolvimento web
 
 Esse é um projeto de introdução aos fundamentos do desenvolvimento Web. 
+Projeto foi realizado utilizando:
+
+- Variáveis
+- Operadores
+- Strings
+- Arrays
+- Objetos
+- Condicionais
+- Laços
+- Funções
+- Funções de Array
+- HTML e CSS
+- Flex e Grid
+- DOM e responsividade
 
 ### Lista de requisitos
 
@@ -19,3 +33,5 @@ Esse é um projeto de introdução aos fundamentos do desenvolvimento Web.
 - [x]  Verificação de valores booleanos true impressa no console
 - [x]  Utilização de Grid ou Flex para estilizar
 - [x]  Atenção ao padrão de estilização enviado
+
+Link do surge: lucas-marques-introweb.surge.sh
